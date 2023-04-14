@@ -1,0 +1,44 @@
+@use "sass:map";
+
+@font-face {
+  font-family: "Blackpast DEMO";
+  src: url("../fonts/blackpast/BlackpastDemo-vm2l9.ttf");
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@font-face {
+  font-family: Sen;
+  src: url("../fonts/Sen/Sen-Regular.ttf");
+}
+
+$purple: (
+  "1000": #7b4ae2,
+  "800": rgba(123, 74, 226, 0.8),
+  "500": rgba(123, 74, 226, 0.5),
+  "200": rgba(123, 74, 226, 0.2),
+  "100": rgba(123, 74, 226, 0.1),
+);
+$white: #ffffff;
+$black: #090e16;
+$grey: (
+  "dark": #232E35,
+  "light": #656D72,
+);
+
+:export {
+  // primary
+  primary1000: map-get($map: $purple, $key: "1000");
+  primary800: map-get($map: $purple, $key: "800");
+  primary500: map-get($map: $purple, $key: "500");
+  primary200: map-get($map: $purple, $key: "200");
+  primary100: map-get($map: $purple, $key: "100");
+  //genral colors
+  dark: $black;
+  white: $white;
+  lightGrey: map-get($map: $grey, $key: "light");
+  darkGrey: map-get($map: $grey, $key: "dark");
+}

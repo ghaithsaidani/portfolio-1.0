@@ -1,0 +1,6 @@
+export type {default as Chip} from "./Chip"
+export type {default as Img} from "./Img"
+export type {default as formProps} from "./formProps"
+export type {default as myFormValues} from "./myFormValues"
+export type {default as Education} from "./Education"
+export type {default as Infobox} from "./Infobox"
