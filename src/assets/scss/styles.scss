@@ -9,9 +9,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   transition: background 0.5s;
 }
@@ -36,6 +38,7 @@ header {
   transition: background 0.5s;
   z-index: 2;
   top: 0;
+
   nav {
     ul {
       height: 100dvh;
@@ -44,10 +47,12 @@ header {
       justify-content: space-evenly;
       align-items: center;
       padding: 40px 0;
+
       li {
         display: block;
         margin: 0;
         writing-mode: vertical-rl;
+
         a {
           text-decoration: none;
           cursor: pointer;
@@ -55,6 +60,7 @@ header {
           position: relative;
           font-size: 17px;
         }
+
         a::before {
           content: "";
           position: absolute;
@@ -66,9 +72,11 @@ header {
           transform: scaleY(0);
           transition: transform 0.5s;
         }
+
         a:hover::before {
           transform: scaleY(1);
         }
+
         .active::before {
           content: "";
           position: absolute;
@@ -92,6 +100,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
     .chip {
       background-color: map.get($purple, "200");
       display: flex;
@@ -100,9 +109,11 @@ main {
       width: fit-content;
       gap: 20px;
       border-radius: 20px;
+
       img {
         height: 35px;
       }
+
       h5 {
         font-size: 20px;
         font-family: "Sen";
@@ -110,23 +121,29 @@ main {
         color: map-get($map: $purple, $key: "1000");
       }
     }
+
     article {
       height: fit-content;
     }
   }
+
   #home {
     display: grid;
     place-items: center;
+
     article {
       img {
         width: 100%;
       }
+
       h2 {
         font-size: 40px;
       }
+
       h1 {
         font-size: 45px;
       }
+
       .name {
         h2 {
           color: map-get($map: $purple, $key: "1000");
@@ -134,28 +151,35 @@ main {
       }
     }
   }
+
   #about {
     height: 100%;
+
     article {
       justify-content: center;
       align-items: center;
+
       img {
         width: 70%;
       }
     }
   }
+
   #skills {
     article {
       display: grid;
       gap: 30px 0;
+
       h4 {
         font-family: "Inter";
         color: map.get($grey, "light");
       }
+
       .technologies {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
+
         img {
           height: 50px;
           flex: 1;
@@ -167,11 +191,13 @@ main {
   #projects {
     width: 100%;
     height: 100%;
+
     article {
       .projects {
         .swiper {
           width: 100%;
           margin-bottom: 30px;
+
           .swiper-slide {
             .card {
               text-align: center;
@@ -184,41 +210,51 @@ main {
               justify-content: center;
               align-items: center;
               gap: 20px;
+
               h3 {
                 font-size: 15px;
               }
+
               .techs-date {
                 width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
                 .used-techs {
                   display: flex;
+
                   img {
                     width: 35px;
                   }
                 }
+
                 .date {
                   font-size: 13px;
-                  color: map-get($map: $grey, $key: "dark");
+                  color: map-get($map: $grey, $key: "light");
                 }
               }
+
               .project-img {
                 width: 200px;
                 height: 120px;
                 border-radius: 5px;
               }
+
               a {
                 place-self: end;
                 gap: 15px;
+
                 svg {
                   margin-left: -20px;
                   transition: margin 0.5s;
                   visibility: hidden;
                 }
               }
+
               :hover {
                 transition: all 0.5s;
+
                 svg {
                   margin-left: 0;
                   transition: all 0.5s;
@@ -234,21 +270,26 @@ main {
 
   #contact {
     height: 100%;
+
     .chip {
       margin-bottom: 50px;
     }
+
     article {
       h4 {
         font-family: "Sen";
         font-size: 30px;
       }
+
       img {
         width: 70%;
         margin-top: 10px;
       }
+
       form {
         margin-top: 30px;
       }
+
       .info-box {
         display: flex;
         flex: 1;
@@ -262,22 +303,25 @@ main {
           place-items: center;
           border-radius: 8px;
           background-color: $white;
+
           svg {
             color: map-get($map: $purple, $key: "1000");
             height: 15px;
             width: 15px;
           }
         }
+
         .light {
           background-color: map-get($map: $purple, $key: "200");
         }
+
         h4 {
           text-align: start;
           font-size: 15px;
-          color: map-get($map: $grey, $key: "light");
         }
+
         p {
-          color: map-get($map: $grey, $key: "dark");
+          color: map-get($map: $grey, $key: "light");
           font-size: 10px;
         }
       }
@@ -294,28 +338,33 @@ main {
             height: 50px;
             width: 50px;
           }
+
           .info-box-title {
             font-size: 17px;
           }
+
           p {
             font-size: 12px;
           }
         }
       }
     }
-    
+
     #projects {
       width: 100%;
       height: 100%;
+
       article {
         .projects {
           .swiper {
             .swiper-slide {
               .card {
                 width: 250px;
+
                 h3 {
                   font-size: 18px;
                 }
+
                 .techs-date {
                   .used-techs {
                     img {
@@ -323,6 +372,7 @@ main {
                     }
                   }
                 }
+
                 .project-img {
                   width: 250px;
                   height: 160px;
@@ -336,12 +386,13 @@ main {
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   main {
     section {
       height: 100vh;
     }
-    #about{
+
+    #about {
       height: 100vh;
     }
   }
@@ -351,17 +402,21 @@ main {
   body {
     padding: 0;
   }
+
   .Toastify__toast {
     width: 100%;
     margin: 0;
   }
+
   header {
     position: fixed;
     width: 100%;
+
     nav {
       display: grid;
       place-items: center;
       grid-template-columns: repeat(3, auto);
+
       ul {
         height: fit-content;
         flex-direction: row;
@@ -369,10 +424,12 @@ main {
         padding: 30px 0;
         grid-column: 2;
         gap: 40px;
+
         li {
           display: block;
           margin: 0;
           writing-mode: horizontal-tb;
+
           a::before {
             left: 0;
             bottom: -6px;
@@ -380,9 +437,11 @@ main {
             width: 100%;
             transform: scaleX(0);
           }
+
           a:hover::before {
             transform: scaleX(1);
           }
+
           .active::before {
             left: 0;
             bottom: -6px;
@@ -392,27 +451,33 @@ main {
           }
         }
       }
+
       button {
         place-self: center start;
       }
     }
   }
+
   main {
     section {
       height: 100vh;
       padding: 0;
       width: fit-content;
       margin: auto;
+
       .chip {
         margin: 100px auto 0 auto;
+
         img {
           height: 40px;
         }
+
         h5 {
           font-size: 25px;
         }
       }
     }
+
     #home {
       article {
         h1 {
@@ -420,21 +485,26 @@ main {
         }
       }
     }
+
     #about {
       article {
         img {
           width: 40%;
         }
+
         p {
           font-size: 1.2rem;
         }
+
         button {
           font-size: 18px;
         }
       }
     }
+
     #projects {
       height: 100vh;
+
       article {
         height: 100%;
 
@@ -443,6 +513,7 @@ main {
           display: flex;
           justify-content: center;
           align-items: center;
+
           .swiper {
             .swiper-slide {
               display: flex;
@@ -452,28 +523,34 @@ main {
         }
       }
     }
+
     #contact {
       height: 100%;
       padding: 20px 0;
+
       article {
         img {
           width: 500px;
           margin-top: 0;
         }
+
         form {
           margin-top: 0;
         }
+
         .info-box {
           justify-content: center;
+
           .info-box-icon {
             height: 60px;
             width: 60px;
           }
+
           h4 {
             font-size: 17px;
           }
+
           p {
-            color: map-get($map: $grey, $key: "dark");
             font-size: 12px;
           }
         }
@@ -504,6 +581,7 @@ main {
         }
       }
     }
+
     #projects {
       article {
         .projects {
@@ -512,9 +590,11 @@ main {
               .card {
                 width: 350px;
                 padding-block: 40px;
+
                 h3 {
                   font-size: 25px;
                 }
+
                 .techs-date {
                   .used-techs {
                     img {
@@ -522,6 +602,7 @@ main {
                     }
                   }
                 }
+
                 .project-img {
                   width: 350px;
                   height: 220px;
@@ -533,10 +614,9 @@ main {
       }
     }
 
-    #contact{
+    #contact {
       padding: 0;
       height: calc(100vh - 56px);
     }
   }
 }
-

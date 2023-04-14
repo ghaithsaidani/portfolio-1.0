@@ -22,41 +22,6 @@ import { useMediaQuery, useTheme } from "@mui/material";
 export const ProjectsArticle = () => {
   const myprojects: Card[] = [
     {
-      title: "Desktop application for Municipality management",
-      usedTechs: [
-        {
-          src: java,
-          alt: "Java",
-        },
-        {
-          src: oracle,
-          alt: "Oracle",
-        },
-      ],
-      date: 2021,
-      img: {
-        src: municipality,
-        alt: "application for Municipality management",
-      },
-      link: "https://github.com/ghaithsaidani/Municipality-management",
-    },
-    {
-      title: "E-Commerce android application",
-      usedTechs: [
-        {
-          src: android,
-          alt: "Android",
-        },
-        {
-          src: firebase,
-          alt: "Firebase",
-        },
-      ],
-      date: 2021,
-      img: { src: e_commerce, alt: "E-Commerce application" },
-      link: "https://github.com/ghaithsaidani/E-commerce_Android_App",
-    },
-    {
       title: "Complaints management of an Hotel",
       usedTechs: [
         {
@@ -99,6 +64,41 @@ export const ProjectsArticle = () => {
       date: 2022,
       img: { src: tennisApp, alt: "application for Tennis Club" },
       link: "https://github.com/ghaithsaidani/Tennis-marsa",
+    },
+    {
+      title: "Desktop application for Municipality management",
+      usedTechs: [
+        {
+          src: java,
+          alt: "Java",
+        },
+        {
+          src: oracle,
+          alt: "Oracle",
+        },
+      ],
+      date: 2021,
+      img: {
+        src: municipality,
+        alt: "application for Municipality management",
+      },
+      link: "https://github.com/ghaithsaidani/Municipality-management",
+    },
+    {
+      title: "E-Commerce android application",
+      usedTechs: [
+        {
+          src: android,
+          alt: "Android",
+        },
+        {
+          src: firebase,
+          alt: "Firebase",
+        },
+      ],
+      date: 2021,
+      img: { src: e_commerce, alt: "E-Commerce application" },
+      link: "https://github.com/ghaithsaidani/E-commerce_Android_App",
     },
   ];
   const theme = useTheme();

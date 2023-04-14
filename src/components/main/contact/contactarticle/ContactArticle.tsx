@@ -31,7 +31,7 @@ export const ContactArticle = () => {
     {
       icon: <FiPhoneCall color="primary" />,
       title: "Phone",
-      body: "(216) 56 439 910",
+      body: "(+216) 56 439 910",
     },
     {
       icon: <HiOutlineMail />,
@@ -68,7 +68,7 @@ export const ContactArticle = () => {
          setLoading(true);
           try {
             axios
-              .post(`https://my-portfolio-vyvk.onrender.com/api/email`, values,{headers: { 'Content-Type': 'application/json'}})
+              .post(`http://54.93.82.137:8000/api/email`, values,{headers: { 'Content-Type': 'application/json'}})
               .then((response) => {
                 setLoading(false);
                 toast.success(response.data.message);
