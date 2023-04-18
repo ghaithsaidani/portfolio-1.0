@@ -41,7 +41,7 @@ header {
 
   nav {
     ul {
-      height: 100vh;
+      height: 100dvh;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -95,7 +95,7 @@ header {
 
 main {
   section {
-    height: 100vh;
+    height: 100dvh;
     padding: 20px 0 2% 20px;
     display: flex;
     flex-direction: column;
@@ -389,11 +389,11 @@ main {
 @media screen and (min-width: 768px) {
   main {
     section {
-      height: 100vh;
+      height: 100dvh;
     }
 
     #about {
-      height: 100vh;
+      height: 100dvh;
     }
   }
 }
