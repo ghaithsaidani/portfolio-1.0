@@ -64,6 +64,7 @@ export const ContactArticle = () => {
       validateOnChange: true,
       validateOnBlur: false,
       validationSchema: validationschema,
+      
       onSubmit: (values) => {
          setLoading(true);
           try {
