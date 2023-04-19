@@ -38,7 +38,7 @@ export const AboutArticle = () => {
             and get a sense of the creativity and excitement that I bring to
             every project I undertake.
           </Typography>
-            <Button variant={"contained"} endIcon={<HiOutlineDocumentDownload />} target="_blank" href="https://public.db.files.1drv.com/y4mwCk2QSI0sqZVNianz-geSnC1xIeDXBnTC8cQpP_wdkSNRCbg-SiRZceXbgxOlXVg24EwRojs4DDBfrVaX6t6YcM5XIUSrgUVlMsVaNMadIurTMbZgdu75eMtC0Owo20WXx1yISqG-LnCzqi7B90jKJ6Wv2sLFBClKmiK5Zo8LyZeYz7ZX73ozHjDP45WDocZDc8TQyMGLxwKNj4k-pTeTBPI50eXtoQVhXlPY-bhgtE?AVOverride=1">
+            <Button variant={"contained"} endIcon={<HiOutlineDocumentDownload />} target="_blank" href="https://public.db.files.1drv.com/y4mtJfugpRNgZ8L2dYPheQhaIePDila3mh2DkSDdl6IoksKaw888ncbNxqsf44jZ_y0Z1Wg8WTGK5XeV2VrKxSN9z2ypq-j0_N9BaO4vuIq06mPWbd9-CZFdtCse2tNC0uqpbMDTh6z72gbhYXc-p3kUqwsVgxB2PiJNXIEDWstNM2JjmMUxP_aNd8kryZ66Xn71O9xopuTDExP9_hdNAnjfIfwcN3nI-NBOk10dtXwou0?AVOverride=1">
               download cv
             </Button>
         </Stack>
