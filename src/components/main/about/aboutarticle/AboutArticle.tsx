@@ -3,6 +3,7 @@ import { AboutPhotoDark, AboutPhotoLight } from "../../../../assets/images";
 import { useSelector } from "react-redux";
 import { darkValue } from "../../../../features/themeSlice";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
+import { Resume } from "../../../../assets/documents";
 
 export const AboutArticle = () => {
   const dark = useSelector(darkValue);
@@ -38,7 +39,7 @@ export const AboutArticle = () => {
             and get a sense of the creativity and excitement that I bring to
             every project I undertake.
           </Typography>
-            <Button variant={"contained"} endIcon={<HiOutlineDocumentDownload />} target="_blank" href="https://public.db.files.1drv.com/y4mtJfugpRNgZ8L2dYPheQhaIePDila3mh2DkSDdl6IoksKaw888ncbNxqsf44jZ_y0Z1Wg8WTGK5XeV2VrKxSN9z2ypq-j0_N9BaO4vuIq06mPWbd9-CZFdtCse2tNC0uqpbMDTh6z72gbhYXc-p3kUqwsVgxB2PiJNXIEDWstNM2JjmMUxP_aNd8kryZ66Xn71O9xopuTDExP9_hdNAnjfIfwcN3nI-NBOk10dtXwou0?AVOverride=1">
+            <Button variant={"contained"} endIcon={<HiOutlineDocumentDownload />} download={"Resume"} href={Resume}>
               download cv
             </Button>
         </Stack>
