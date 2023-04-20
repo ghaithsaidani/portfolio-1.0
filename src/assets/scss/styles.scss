@@ -461,7 +461,6 @@ main {
   main {
     section {
       height: 100vh;
-      padding: 0;
       width: fit-content;
       margin: auto;
 
@@ -487,6 +486,8 @@ main {
     }
 
     #about {
+      height: 100%;
+      padding: 30px 0;
       article {
         img {
           width: 40%;
@@ -504,10 +505,8 @@ main {
 
     #projects {
       height: 100vh;
-
       article {
         height: 100%;
-
         .projects {
           height: 100%;
           display: flex;
@@ -526,8 +525,7 @@ main {
 
     #contact {
       height: 100%;
-      padding: 20px 0;
-
+      padding: 25px 0;
       article {
         img {
           width: 500px;
@@ -612,11 +610,6 @@ main {
           }
         }
       }
-    }
-
-    #contact {
-      padding: 0;
-      height: calc(100vh - 56px);
     }
   }
 }
