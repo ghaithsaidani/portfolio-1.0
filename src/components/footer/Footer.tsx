@@ -36,6 +36,7 @@ export const Footer = () => {
         position={"relative"}
         bgcolor={"primary.main"}
         zIndex={99}
+        marginTop={{xs:10,md:0}}
       >
         <Typography variant="h6" color={"common.white"} marginLeft={{md:25}}>Copyright © Ghaith Saidani · 2023</Typography>
         <Stack

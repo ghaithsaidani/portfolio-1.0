@@ -64,7 +64,7 @@ header {
         a::before {
           content: "";
           position: absolute;
-          left: -20px;
+          left: -6px;
           background: map-get($map: $purple, $key: "1000");
           height: 100%;
           border-radius: 6px;
@@ -80,7 +80,7 @@ header {
         .active::before {
           content: "";
           position: absolute;
-          left: -20px;
+          left: -6px;
           background: map-get($map: $purple, $key: "1000");
           height: 100%;
           border-radius: 6px;
@@ -538,7 +538,6 @@ main {
 
         .info-box {
           justify-content: center;
-
           .info-box-icon {
             height: 60px;
             width: 60px;
