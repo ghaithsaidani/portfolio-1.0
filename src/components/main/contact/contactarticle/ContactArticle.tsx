@@ -179,7 +179,7 @@ export const ContactArticle = () => {
             </LoadingButton>
           </form>
         </Grid>
-        <Grid item xs={12} marginY={{ xs: 20, md: 50 }} >
+        <Grid item xs={12} marginTop={{ xs: 20, md: 50 }} marginBottom={{ xs: 10, md: 0 }}>
           <Stack
             gap={{ xs: 20, md: 0 }}
             flexDirection={{ md: "row" }}
