@@ -71,14 +71,14 @@ export const Navbar = () => {
         {query
           ? linksLg.map((link) => (
               <li key={link.id}>
-                <Link activeClass="active" smooth offset={-100} spy duration={0} to={link.id}>
+                <Link activeClass="active" smooth spy duration={0} to={link.id}>
                   {link.text}
                 </Link>
               </li>
             ))
           : links.map((link) => (
               <li key={link.id}>
-                <Link activeClass="active" smooth spy offset={-100} duration={0} to={link.id}>
+                <Link activeClass="active" smooth spy duration={0} to={link.id}>
                   {link.text}
                 </Link>
               </li>
