@@ -158,9 +158,9 @@ main {
     article {
       justify-content: center;
       align-items: center;
-
       img {
         width: 70%;
+        -moz-column-width: 100%;
       }
     }
   }
