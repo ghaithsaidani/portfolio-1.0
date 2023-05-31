@@ -5,6 +5,7 @@ import {
   SiCodeforces,
   SlSocialLinkedin,
 } from "react-icons/all";
+import {SiLeetcode} from "react-icons/si";
 
 export const Footer = () => {
   const socialMedias = [
@@ -18,11 +19,10 @@ export const Footer = () => {
       icon: <FiGithub />,
       link: "https://github.com/ghaithsaidani",
     },
-    
     {
-      id: "codeForces",
-      icon: <SiCodeforces />,
-      link: "https://codeforces.com/profile/ghaith_saidani?csrf_token=25919acae48c81c54e98870b0fc2e60c",
+      id: "leetCode",
+      icon: <SiLeetcode/>,
+      link: "https://leetcode.com/ghaith_saidani/",
     },
   ];
   return (

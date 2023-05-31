@@ -39,7 +39,7 @@ export const AboutArticle = () => {
             and get a sense of the creativity and excitement that I bring to
             every project I undertake.
           </Typography>
-            <Button variant={"contained"} endIcon={<HiOutlineDocumentDownload />} download={"Resume"} href={Resume}>
+            <Button variant={"contained"} endIcon={<HiOutlineDocumentDownload />} download={"Saidani Ghaith Resume"} href={Resume}>
               download cv
             </Button>
         </Stack>

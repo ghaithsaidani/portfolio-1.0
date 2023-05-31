@@ -1,7 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material";
-import { FaHackerrank } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
-import { SiCodeforces } from "react-icons/si";
+import {SiCodeforces, SiLeetcode} from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { Programmer } from "../../../../assets/images";
 import { CustomLink } from "../../../../theme/Muicomponents/CustomLink";
@@ -19,14 +18,14 @@ export const HomeArticle = () => {
       link: "https://github.com/ghaithsaidani",
     },
     {
+      id: "leetCode",
+      icon: <SiLeetcode/>,
+      link: "https://leetcode.com/ghaith_saidani/",
+    },
+    {
       id: "codeForces",
       icon: <SiCodeforces />,
       link: "https://codeforces.com/profile/ghaith_saidani?csrf_token=25919acae48c81c54e98870b0fc2e60c",
-    },
-    {
-      id: "hackerRank",
-      icon: <FaHackerrank />,
-      link: "https://www.hackerrank.com/ghaith_saidani",
     }
   ];
   return (
