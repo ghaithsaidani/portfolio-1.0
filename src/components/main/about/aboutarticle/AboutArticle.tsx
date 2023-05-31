@@ -3,7 +3,7 @@ import { AboutPhotoDark, AboutPhotoLight } from "../../../../assets/images";
 import { useSelector } from "react-redux";
 import { darkValue } from "../../../../features/themeSlice";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
-import { Resume } from "../../../../assets/documents";
+import {CV} from "../../../../assets/documents";
 
 export const AboutArticle = () => {
   const dark = useSelector(darkValue);
@@ -39,7 +39,7 @@ export const AboutArticle = () => {
             and get a sense of the creativity and excitement that I bring to
             every project I undertake.
           </Typography>
-            <Button variant={"contained"} endIcon={<HiOutlineDocumentDownload />} download={"Saidani Ghaith Resume"} href={Resume}>
+            <Button variant={"contained"} endIcon={<HiOutlineDocumentDownload />} download={"Saidani Ghaith CV"} href={CV}>
               download cv
             </Button>
         </Stack>
