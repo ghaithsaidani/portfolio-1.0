@@ -1,3 +1,6 @@
+//Logo
+export {default as Logo} from './Logo.svg'
+
 //Home Gif
 export {default as Programmer} from './programmer.gif'
 

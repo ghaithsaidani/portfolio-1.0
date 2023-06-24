@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { changetheme, darkValue } from "../../../features/themeSlice";
 import { useCallback } from "react";
 import { Link } from "react-scroll";
+import {Logo} from "../../../assets/images";
 
 interface link {
   id: string;
@@ -67,6 +68,7 @@ export const Navbar = () => {
   const handleClick = useCallback(() => dispatch(changetheme()), [darkMode]);
   return (
     <nav>
+      <img src={Logo} alt={"logo"}/>
       <ul className={"list-none"}>
         {query
           ? linksLg.map((link) => (
