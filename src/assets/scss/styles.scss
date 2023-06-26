@@ -151,9 +151,41 @@ main {
         font-size: 45px;
       }
 
-      .name {
-        h2 {
-          color: map-get($map: $purple, $key: "1000");
+      #logo{
+        margin: 1rem auto;
+
+        path{
+          &:first-child{
+            stroke-dasharray: 622;
+            stroke-dashoffset: 622;
+            animation: line-anim 2s ease forwards;
+          }
+          &:nth-child(2){
+            stroke-dasharray: 627;
+            stroke-dashoffset: 627;
+          }
+          &:nth-child(3){
+            stroke-dasharray: 597;
+            stroke-dashoffset: 597;
+          }
+          &:nth-child(4){
+            stroke-dasharray: 394;
+            stroke-dashoffset: 394;
+          }
+          &:nth-child(5){
+            stroke-dasharray: 361;
+            stroke-dashoffset: 361;
+          }
+          &:nth-child(6){
+            stroke-dasharray: 627;
+            stroke-dashoffset: 627;
+          }
+        }
+      }
+
+      @keyframes line-anim {
+        to{
+          stroke-dashoffset: 0;
         }
       }
     }
@@ -493,6 +525,9 @@ main {
       article {
         h1 {
           font-size: 50px;
+        }
+        #logo{
+          margin: 1rem 0;
         }
       }
     }
