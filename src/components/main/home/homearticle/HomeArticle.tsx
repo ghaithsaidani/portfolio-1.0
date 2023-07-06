@@ -4,7 +4,7 @@ import {SiCodeforces, SiLeetcode} from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { Programmer } from "../../../../assets/images";
 import { CustomLink } from "../../../../theme/Muicomponents/CustomLink";
-import {useRef} from "react";
+
 
 export const HomeArticle = () => {
   const socialMedias = [

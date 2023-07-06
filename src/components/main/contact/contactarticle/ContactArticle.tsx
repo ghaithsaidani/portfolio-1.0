@@ -26,7 +26,7 @@ export const ContactArticle = () => {
     {
       icon: <BsPinMap />,
       title: "Adress",
-      body: "Bizerte, Tunisie",
+      body: "Bizerte, Tunisia",
     },
     {
       icon: <FiPhoneCall color="primary" />,
@@ -36,7 +36,7 @@ export const ContactArticle = () => {
     {
       icon: <HiOutlineMail />,
       title: "Email",
-      body: "ghaithsaidani18@gmail.com",
+      body: "ghaith.saidani@sesame.com.tn",
     },
   ];
   const initialvalues: myFormValues = {
