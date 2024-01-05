@@ -129,7 +129,7 @@ main {
 
       h5 {
         font-size: 20px;
-        font-family: "Sen";
+        font-family: "Sen",sans-serif;
         font-weight: 600;
         color: map-get($map: $purple, $key: "1000");
       }
@@ -141,9 +141,8 @@ main {
   }
 
   #home {
-    display: grid;
-    place-items: center;
-
+    display: flex;
+    justify-content: center;
     article {
       img {
         width: 100%;
@@ -155,11 +154,100 @@ main {
 
       h1 {
         font-size: 45px;
+
+        .job{
+          overflow: hidden;
+          height: 80px;
+          ul{
+            margin-top: 0;
+            //padding-left: 110px;
+            text-align: left;
+            list-style: none;
+            -webkit-animation-name: change;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-iteration-count: infinite;
+            animation-name: change;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            li{
+
+            }
+          }
+        }
+      }
+      @keyframes __bounceInDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-1000px);
+        }
+        60% {
+          opacity: 1;
+          transform: translateY(30px);
+        }
+        80% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .name{
+        overflow: hidden;
+        svg{
+          //animation: __bounceInDown 4s ease-in-out ;
+          path{
+            &:nth-child(8){
+              animation: __bounceInDown 1s ease-in-out;
+            }
+            &:nth-child(9){
+              animation: __bounceInDown 1.5s ease-in-out;
+            }
+            &:nth-child(10){
+              animation: __bounceInDown 2s ease-in-out;
+            }
+            &:nth-child(11){
+              animation: __bounceInDown 2.5s ease-in-out;
+            }
+            &:nth-child(12){
+              animation: __bounceInDown 3s ease-in-out;
+            }
+            &:nth-child(13){
+              animation: __bounceInDown 3.5s ease-in-out;
+            }
+            &:nth-child(1){
+              animation: __bounceInDown 1s ease-in-out ;
+            }
+            &:nth-child(2){
+              animation: __bounceInDown 1.5s ease-in-out ;
+            }
+            &:nth-child(3){
+              animation: __bounceInDown 2s ease-in-out ;
+            }
+            &:nth-child(4){
+              animation: __bounceInDown 2.5s ease-in-out ;
+            }
+            &:nth-child(5){
+              animation: __bounceInDown 3s ease-in-out ;
+            }
+            &:nth-child(6){
+              animation: __bounceInDown 3.5s ease-in-out ;
+            }
+            &:nth-child(7){
+              animation: __bounceInDown 4s ease-in-out ;
+            }
+          }
+
+        }
       }
 
-      svg{
-        margin: 1rem auto;
+
+
+      @keyframes change {
+        0%, 12.66% ,100%{transform:translate3d(0,0,0);}
+        33.32%,45.98% , 66.64%,79.3%{transform:translate3d(0,-50%,0);}
+
       }
+
     }
   }
 
@@ -182,7 +270,7 @@ main {
       gap: 30px 0;
 
       h4 {
-        font-family: "Inter";
+        font-family: "Inter",sans-serif;
         color: map.get($grey, "light");
       }
 
@@ -288,7 +376,7 @@ main {
 
     article {
       h4 {
-        font-family: "Sen";
+        font-family: "Sen",sans-serif;
         font-size: 30px;
       }
 
@@ -631,3 +719,6 @@ main {
     }
   }
 }
+
+
+
