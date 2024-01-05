@@ -36,7 +36,6 @@ export const LightPalette:PaletteOptions=({
     common:{
         white:colors.white,
         black:colors.black
-        
     }
 })
 

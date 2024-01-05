@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+/*html,body{
+  overflow: hidden;
+}*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -38,7 +42,6 @@ header {
   transition: background 0.5s;
   z-index: 2;
   top: 0;
-
   nav {
     display: flex;
     flex-direction: column;
@@ -63,7 +66,7 @@ header {
         a {
           text-decoration: none;
           cursor: pointer;
-          font-family: "Blackpast DEMO";
+          font-family: "Blackpast DEMO",sans-serif;
           position: relative;
           font-size: 17px;
         }
@@ -101,13 +104,16 @@ header {
 }
 
 main {
+  //overflow-y: scroll;
+  //scroll-snap-type: y mandatory;
+  //height: 100dvh;
   section {
     height: 100dvh;
     padding: 20px 0 2% 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-
+    //scroll-snap-align: start;
     .chip {
       background-color: map.get($purple, "200");
       display: flex;

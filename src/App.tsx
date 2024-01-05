@@ -35,8 +35,6 @@ export const App = () => {
           </Stack>
         </Grid>
       </Grid>
-    </ThemeProvider> 
-    
-    
+    </ThemeProvider>
   );
 };
