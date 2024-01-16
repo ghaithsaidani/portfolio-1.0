@@ -27,6 +27,7 @@ export const AboutArticle = () => {
           alignItems={"center"}
           gap={{ xs: 15, md: 50 }}
           paddingX={{ sm: "3%", xl: "45px" }}
+          width={{ xs: "100%", md: "60%" }}
         >
           <Typography variant={"body1"}>
             I&apos;m a student with a multitude of talents, I have a strong

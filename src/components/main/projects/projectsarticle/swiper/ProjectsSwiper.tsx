@@ -21,7 +21,7 @@ export const ProjectsSwiper = (props: { projects: Card[] }) => {
             grabCursor={true}
             centeredSlides={true}
             loop={false}
-            slidesPerView={lg ? 2.5 : md ? 2 : sm?1.5:1.2}
+            slidesPerView={lg ? 2.5 : md ? 2 : sm?1.5:1.07}
             //slidesPerView={"auto"}
             coverflowEffect={{
                 rotate: 10,

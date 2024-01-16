@@ -519,24 +519,18 @@ main {
       article {
         .name{
           place-items: start;
+          margin: 1rem 0;
+        }
+        svg{
+
         }
         h1{
+          font-size: 50px;
           .job{
             ul{
               text-align: left;
             }
           }
-        }
-      }
-    }
-
-    #home {
-      article {
-        h1 {
-          font-size: 50px;
-        }
-        svg{
-          margin: 1rem 0;
         }
       }
     }
@@ -551,6 +545,7 @@ main {
 
         p {
           font-size: 1.2rem;
+
         }
 
         button {
