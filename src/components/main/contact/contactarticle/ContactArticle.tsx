@@ -59,7 +59,7 @@ export const ContactArticle = () => {
     const [loading, setLoading] = useState(false);
 
     const sendEmail = () => {
-        emailjs.sendForm('service_fz52ilk', 'template_e26m6eq', form.current as HTMLFormElement, 'je2ky3EtJNfxPWTYG')
+        emailjs.sendForm(import.meta.env.VITE_APP_SERVICE_ID,import.meta.env.VITE_APP_TEMPLATE_ID, form.current as HTMLFormElement, import.meta.env.VITE_APP_PUBLIC_KEY)
             .then((result) => {
                 setLoading(false);
                 resetForm();
