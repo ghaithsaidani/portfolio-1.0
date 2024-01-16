@@ -7,6 +7,7 @@ import { DarkPalette, LightPalette } from "./theme/requirements/Palette";
 import { Theme } from "./theme/Theme";
 import { Main } from "./components/main/Main";
 import { Footer } from "./components/footer/Footer";
+import { Analytics } from '@vercel/analytics/react';
 
 export const App = () => {
   const dark = useSelector(darkValue);
@@ -35,6 +36,7 @@ export const App = () => {
           </Stack>
         </Grid>
       </Grid>
+        <Analytics />
     </ThemeProvider>
   );
 };
