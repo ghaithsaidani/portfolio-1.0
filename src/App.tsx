@@ -8,9 +8,11 @@ import { Theme } from "./theme/Theme";
 import { Main } from "./components/main/Main";
 import { Footer } from "./components/footer/Footer";
 import { Analytics } from '@vercel/analytics/react';
+import { inject } from '@vercel/analytics';
 
 export const App = () => {
   const dark = useSelector(darkValue);
+  inject();
   return (
     
       <ThemeProvider
@@ -36,7 +38,7 @@ export const App = () => {
           </Stack>
         </Grid>
       </Grid>
-        <Analytics />
+        {/*<Analytics />*/}
     </ThemeProvider>
   );
 };
