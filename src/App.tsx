@@ -7,12 +7,13 @@ import { DarkPalette, LightPalette } from "./theme/requirements/Palette";
 import { Theme } from "./theme/Theme";
 import { Main } from "./components/main/Main";
 import { Footer } from "./components/footer/Footer";
-import { Analytics } from '@vercel/analytics/react';
 import { inject } from '@vercel/analytics';
+import {injectSpeedInsights} from "@vercel/speed-insights";
 
 export const App = () => {
   const dark = useSelector(darkValue);
   inject();
+  injectSpeedInsights();
   return (
     
       <ThemeProvider
@@ -38,7 +39,6 @@ export const App = () => {
           </Stack>
         </Grid>
       </Grid>
-        {/*<Analytics />*/}
     </ThemeProvider>
   );
 };
